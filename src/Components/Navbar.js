@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import Logo from "../Assets/Logo.svg";
-import { BsCart2 } from "react-icons/bs";
+
+
+import { CiLogin } from "react-icons/ci";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { GoSignIn } from "react-icons/go";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -11,50 +13,45 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import HomeIcon from "@mui/icons-material/Home";
+
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
+
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: "Home",
-      icon: <HomeIcon />,
-    },
-    {
-      text: "About",
-      icon: <InfoIcon />,
-    },
-    {
-      text: "Testimonials",
-      icon: <CommentRoundedIcon />,
-    },
-    {
-      text: "Contact",
+      text: "Contact Us",
       icon: <PhoneRoundedIcon />,
     },
     {
-      text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
+      text: "Community",
+      icon: <InfoIcon />,
     },
+    {
+      text: "Login",
+      icon: <CiLogin />,
+    },
+    {
+      text: "Sign Up",
+      icon: <GoSignIn />,
+    },
+ 
   ];
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+        LOGO
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
-          <BsCart2 className="navbar-cart-icon" />
-        </a>
-        <button className="primary-button">Bookings Now</button>
+        <a className="primary-navbutton" href="">Contact Us</a>
+        <a className="primary-navbutton"href="">Community</a>
+        <a className="primary-navbutton" href="">Login</a>
+        <a className="primary-navbutton bluebtn" href="" style={{color: "white"}}>Sign Up</a>
+        
+        {/* <button className="primary-button">Bookings Now</button> */}
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

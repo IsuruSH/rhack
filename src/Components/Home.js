@@ -1,32 +1,34 @@
 import React from "react";
-import BannerBackground from "../Assets/home-banner-background.png";
-import BannerImage from "../Assets/home-banner-image.png";
+import BannerBackground from "../Assets/home-page.png";
+
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container" >
       <Navbar />
-      <div className="home-banner-container">
-        <div className="home-bannerImage-container">
-          <img src={BannerBackground} alt="" />
-        </div>
+      <div class="home-background"></div>
+      <div className="home-banner-container ">
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Your Favourite Food Delivered Hot & Fresh
+            Find<br/>Your Fashion
           </h1>
           <p className="primary-text">
-            Healthy switcher chefs do all the prep work, like peeding, chopping
-            & marinating, so you can cook a fresh food.
+          What ever happened ,it doesn't matter. Find your path.
           </p>
-          <button className="secondary-button">
-            Order Now <FiArrowRight />{" "}
-          </button>
+          <div className="home-button">
+            <a href="" className="secondary-button">
+              Start Meeting <FiArrowRight />{" "}
+            </a>
+            <a href="" className="secondary-button-signup">
+              SIGN UP 
+            </a>
+          </div>
+          
+          
         </div>
-        <div className="home-image-section">
-          <img src={BannerImage} alt="" />
-        </div>
+
       </div>
     </div>
   );

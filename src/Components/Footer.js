@@ -10,33 +10,22 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
-          <img src={Logo} alt="" />
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </div>
         <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
+          <a className="footer-list" href="">My Learning</a>
+          <a className="footer-list"href="">Community</a>
+          <a className="footer-list" href="">Friends</a>
+          <a className="footer-list" href="">Contact us </a>
         </div>
       </div>
       <div className="footer-section-two">
-        <div className="footer-section-columns">
-          <span>Qualtiy</span>
-          <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
-          <span>Testimonials</span>
-          <span>Work</span>
+        <div className="footer-section-columns-left">
+          © 2024 Flame. All rights reserved.
         </div>
-        <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span>hello@food.com</span>
-          <span>press@food.com</span>
-          <span>contact@food.com</span>
-        </div>
-        <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+        <div className="footer-section-columns-right">
+          <a className="footer-list" href="">Terms of Service</a>
+          <a className="footer-list" href="">Privacy Policy</a>
         </div>
       </div>
     </div>
